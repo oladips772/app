@@ -1,0 +1,40 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 70px;
+  background-color: green;
+}
+
+:root {
+  --TextColor: red;
+}
+
+#loadingImage {
+  display: none;
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  margin: 80 auto;
+}
+
+h1 {
+  color: var(--TextColor);
+}
+
+#todoContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    background-color: blue;
+  }
+}
